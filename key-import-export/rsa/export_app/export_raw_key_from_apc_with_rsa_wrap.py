@@ -16,7 +16,7 @@ SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
 The following api calls may be subject to https://aws.amazon.com/service-terms/ section 2 - Beta & Previews
 
-Usage - export_raw_key_from_apc_with_rsa_wrap.py
+Usage - export_raw_key_from_apc_with_rsa_wrap.py --keyArn arn:aws:payment-cryptography:us-east-1:XXXXXXXXXXXXXX:key/qrvpveq43bdyrdtg
 '''
 
 from datetime import datetime
