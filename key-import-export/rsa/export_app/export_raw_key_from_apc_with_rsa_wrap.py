@@ -211,7 +211,7 @@ if __name__ == '__main__':
     print("Step #5 - Decrypted Key:",binascii.hexlify(decryptedKey).decode("utf-8").upper())
 
     #Step #6 - generate KCV and match it against exported KCV
-    if keyAlgorithm == 'TDES_3KEY':
+    if keyAlgorithm == 'TDES_3KEY' or keyAlgorithm == 'TDES_2KEY':
         decryptedKeyKcv = GenerateTdesKcv(decryptedKey)
         print("Step #6 TDES_3KEY KCV:" + decryptedKeyKcv)    
         print("KCV from created symmetric key matches with KCV from decrypted key: ", kcv.lower() == decryptedKeyKcv.lower())
